@@ -1,6 +1,4 @@
-/*Ejercicio 3
-
-En este ejercicio podéis mostrar directamente los resultados por consola o almacenarlos en variables (esto lo podéis hacer en todos los demás, como os resulte más claro).
+/*En este ejercicio podéis mostrar directamente los resultados por consola o almacenarlos en variables (esto lo podéis hacer en todos los demás, como os resulte más claro).
 
 3.1 Multiplica 10 por 5 y muestra el resultado mediante console.*/
 console.log(10 * 5)
