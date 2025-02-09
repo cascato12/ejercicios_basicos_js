@@ -1,10 +1,10 @@
-Contador de repeticiones: Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma.
+/*Contador de repeticiones: Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma.
 
 Por ejemplo, que devuelva: code:4, repeat: 1, eat: 1,...
 
 Podéis conformar el formato que queráis para la devolución del resultado siempre y cuando sea claro.
 
-Puedes usar este array para probar tu función:
+Puedes usar este array para probar tu función:*/
 
 const words = [
   'code',
@@ -18,7 +18,20 @@ const words = [
   'enjoy',
   'sleep',
   'code'
-];
+]
 function repeatCounter(list) {
-  // Completar
+  const wordCount = {}
+  list.forEach((word) => {
+    if (wordCount[word]) {
+      wordCount[word]++
+    } else {
+      wordCount[word] = 1
+    }
+  })
+
+  return wordCount
 }
+
+// Probamos la función
+const result = repeatCounter(words)
+console.log(result)
